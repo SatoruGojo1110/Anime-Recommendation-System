@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime-Hub</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/home-page.css') }}">
+    <script src="https://kit.fontawesome.com/0cdc049c53.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <nav>
+            <div class="nav-container-logo">
+                <ul>
+                    <li><a href="">
+                            <h1>ANIME <img src="static/css/images/1F1E6.svg" alt="">LCHEMY</h1>
+                        </a></li>
+                </ul>
+            </div>
+            <div class="nav-container-left">
+                <ul>
+                    <li><a href="#header">
+                            <p>Home</p>
+                        </a></li>
+                    <li><a href="#trending">
+                            <p>Trending</p>
+                        </a></li>
+                    <li><a href="#recommendation">
+                            <p>Recommendation</p>
+                        </a></li>
+                    <li><a href="#blog">
+                            <p>Top</p>
+                        </a></li>
+                    <li><a href="#contact">
+                            <p>Contact</p>
+                        </a></li>
+                </ul>
+            </div>
+            <div class="nav-container-right">
+                <ul>
+                    <li class="btn"><a href="/" class="login">
+                            <p>Login</p>
+                        </a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="head-holder">
+            <div class="small-gap">
+            </div>
+            <div class="left-holder">
+                <div class="left-sub-holder">
+                    <h1>ANIME ALCHEMY</h1>
+                    <p>An All in One Anime Website.</p>
+                    <div class="pola-holder">
+                        <div class="pola pola-1">
+                            <img src="static/css/images/isagi.jpg" alt="">
+                        </div>
+                        <div class="pola">
+                            <img src="static/css/images/yuji.jpg" alt="">
+                        </div>
+                        <div class="pola pola-2">
+                            <img src="static/css/images/solo.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-holder">
+                <img src="static/css/images/kamado.jpg" alt="">
+            </div>
+        </div>
+
+    </div>
+    <div class="imgScroll-holder">
+
+
+        <div class="imgScroll">
+            <div>
+                <img src="static/css/images/dn.jpg" alt="">
+                <img src="static/css/images/code-geass.jpg" alt="">
+                <img src="static/css/images/seven.jpg" alt="">
+                <img src="static/css/images/mob.jpg" alt="">
+                <img src="static/css/images/assasination.jpg" alt="">
+                <img src="static/css/images/bocchi.jpg" alt="">
+                <img src="static/css/images/bungo.jpg" alt="">
+                <img src="static/css/images/cyberpunk.jpg" alt="">
+                <img src="static/css/images/parasyte.jpg" alt="">
+                <img src="static/css/images/spyx.jpg" alt="">
+                <img src="static/css/images/mdd.jpg" alt="">
+                <img src="static/css/images/komi.jpg" alt="">
+            </div>
+            <div>
+                <img src="static/css/images/dn.jpg" alt="">
+                <img src="static/css/images/code-geass.jpg" alt="">
+                <img src="static/css/images/seven.jpg" alt="">
+                <img src="static/css/images/mob.jpg" alt="">
+                <img src="static/css/images/assasination.jpg" alt="">
+                <img src="static/css/images/bocchi.jpg" alt="">
+                <img src="static/css/images/bungo.jpg" alt="">
+                <img src="static/css/images/cyberpunk.jpg" alt="">
+                <img src="static/css/images/parasyte.jpg" alt="">
+                <img src="static/css/images/spyx.jpg" alt="">
+                <img src="static/css/images/mdd.jpg" alt="">
+                <img src="static/css/images/komi.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div id="trending">
+        <div class="container-top">
+            <div class="topImg-left">
+                <img src="static/css/images/background4.jpg">
+            </div>
+            <div class="topTxt">
+                <div class="topTxtin">
+                    <h1>HERE ARE SOME TRENDING ANIME'S TO WATCH !</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas magnam soluta quidem velit esse
+                        optio reprehenderit accusamus, repellat enim voluptate dolor! Omnis culpa aut repudiandae!
+                        Voluptates nemo, nihil ab illum impedit magnam eligendi? Vel, ut voluptatibus pariatur sint
+                        eveniet odit.</p>
+                </div>
+            </div>
+            <div class="topImg-right">
+                <img src="static/css/images/background5.png">
+            </div>
+        </div>
+        <div class="movies-list">
+            <div class="movie box-card slide-in" id="item1">
+                <img src="static\images\onepiece.jpg">
+                <div class="layer">
+                    <h2>{{ Name[0] }}</h2>
+                    <p>Type - {{ Type[0] }}</p>
+                    <p>Score : {{ Score[0] }}</p>
+                </div>
+            </div>
+            <div class="movie box-card slide-in" id="item2">
+                <img src="static\images\blackclover.jpg">
+                <div class="layer">
+                    <h2>{{ Name[1] }}</h2>
+                    <p>Type - {{ Type[1] }}</p>
+                    <p>Score : {{ Score[1] }}</p>
+                </div>
+            </div>
+            <div class="movie box-card slide-in" id="item3">
+                <img src="static\images\aotfinal.jpg">
+                <div class="layer">
+                    <h2>{{ Name[2] }}</h2>
+                    <p>Type - {{ Type[2] }}</p>
+                    <p>Score : {{ Score[2] }}</p>
+                </div>
+            </div>
+            <div class="movie box-card slide-in" id="item4">
+                <img src="static\images\jjk.jpg">
+                <div class="layer">
+                    <h2>{{ Name[3] }}</h2>
+                    <p>Type - {{ Type[3] }}</p>
+                    <p>Score : {{ Score[3] }}</p>
+                </div>
+            </div>
+            <div class="movie box-card slide-in" id="item5">
+                <img src="static\images\shippuden.jpg">
+                <div class="layer">
+                    <h2>{{ Name[4] }}</h2>
+                    <p>Type - {{ Type[4] }}</p>
+                    <p>Score : {{ Score[4] }}</p>
+                </div>
+            </div>
+            <div class="movie box-card slide-in" id="item6">
+                <img src="static\images\boruto.jpg">
+                <div class="layer">
+                    <h2>{{ Name[5] }}</h2>
+                    <p>Type - {{ Type[5] }}</p>
+                    <p>Score : {{ Score[5] }}</p>
+                </div>
+            </div>
+            <div class="movie box-card slide-in" id="item7">
+                <img src="static\images\bleach.jpg">
+                <div class="layer">
+                    <h2>{{ Name[6] }}</h2>
+                    <p>Type - {{ Type[6] }}</p>
+                    <p>Score : {{ Score[6] }}</p>
+                </div>
+            </div>
+            <div class="movie box-card slide-in" id="item8">
+                <img src="static\images\hunter-x-hunter.jpg">
+                <div class="layer">
+                    <h2>{{ Name[7] }}</h2>
+                    <p>Type - {{ Type[7] }}</p>
+                    <p>Score : {{ Score[7] }}</p>
+                </div>
+            </div>
+            <div class="movie box-card slide-in" id="item9">
+                <img src="static\images\fairytail.jpg">
+                <div class="layer">
+                    <h2>{{ Name[8] }}</h2>
+                    <p>Type - {{ Type[8] }}</p>
+                    <p>Score : {{ Score[8] }}</p>
+                </div>
+            </div>
+            <div class="movie box-card slide-in" id="item10">
+                <img src="static\images\tpnl.jpg">
+                <div class="layer">
+                    <h2>{{ Name[9] }}</h2>
+                    <p>Type - {{ Type[9] }}</p>
+                    <p>Score : {{ Score[9] }}</p>
+                </div>
+            </div>
+            <div class="movie box-card slide-in" id="item11">
+                <img src="static\images\horimiya.jpg">
+                <div class="layer">
+                    <h2>{{ Name[10] }}</h2>
+                    <p>Type - {{ Type[10] }}</p>
+                    <p>Score : {{ Score[10] }}</p>
+                </div>
+            </div>
+            <div class="movie box-card slide-in" id="item12">
+                <img src="static\images\fmab.jpg">
+                <div class="layer">
+                    <h2>{{ Name[11] }}</h2>
+                    <p>Type - {{ Type[11] }}</p>
+                    <p>Score : {{ Score[11] }}</p>
+                </div>
+            </div>
+            <div class="movie box-card slide-in" id="item13">
+                <img src="static\images\gintama.jpg">
+                <div class="layer">
+                    <h2>{{ Name[12] }}</h2>
+                    <p>Type - {{ Type[12] }}</p>
+                    <p>Score : {{ Score[12] }}</p>
+                </div>
+            </div>
+            <div class="movie box-card slide-in" id="item14">
+                <img src="static\images\stonewars.webp">
+                <div class="layer">
+                    <h2>{{ Name[13] }}</h2>
+                    <p>Type - {{ Type[13] }}</p>
+                    <p>Score : {{ Score[13] }}</p>
+                </div>
+            </div>
+            <div class="movie box-card slide-in" id="item15">
+                <img src="static\images\rezero2.jpg">
+                <div class="layer">
+                    <h2>{{ Name[14] }}</h2>
+                    <p>Type - {{ Type[14] }}</p>
+                    <p>Score : {{ Score[14] }}</p>
+                </div>
+            </div>
+            <div class="movie box-card slide-in" id="item16">
+                <img src="static\images\mushoku.jpg">
+                <div class="layer">
+                    <h2>{{ Name[15] }}</h2>
+                    <p>Type - {{ Type[15] }}</p>
+                    <p>Score : {{ Score[15] }}</p>
+                </div>
+            </div>
+            <div class="movie box-card slide-in" id="item17">
+                <img src="static\images\naruto.jpg">
+                <div class="layer">
+                    <h2>{{ Name[16] }}</h2>
+                    <p>Type - {{ Type[16] }}</p>
+                    <p>Score : {{ Score[16] }}</p>
+                </div>
+            </div>
+            <div class="movie box-card slide-in" id="item18">
+                <img src="static\images\deathnote.jpg">
+                <div class="layer">
+                    <h2>{{ Name[17] }}</h2>
+                    <p>Type - {{ Type[17] }}</p>
+                    <p>Score : {{ Score[17] }}</p>
+                </div>
+            </div>
+            <div class="movie box-card slide-in" id="item19">
+                <img src="static\images\kny.jpg">
+                <div class="layer">
+                    <h2>{{ Name[18] }}</h2>
+                    <p>Type - {{ Type[18] }}</p>
+                    <p>Score : {{ Score[18] }}</p>
+                </div>
+            </div>
+            <div class="movie box-card slide-in" id="item20">
+                <img src="static\images\attack_on_Titan.webp">
+                <div class="layer">
+                    <h2>{{ Name[19] }}</h2>
+                    <p>Type - {{ Type[19] }}</p>
+                    <p>Score : {{ Score[19] }}</p>
+                </div>
+            </div>
+            <div class="movie box-card slide-in" id="item21">
+                <img src="static\images\bebop.jpg">
+                <div class="layer">
+                    <h2>{{ Name[20] }}</h2>
+                    <p>Type - {{ Type[20] }}</p>
+                    <p>Score : {{ Score[20] }}</p>
+                </div>
+            </div>
+            <div class="movie box-card slide-in" id="item22">
+                <img src="static\images\slime.webp">
+                <div class="layer">
+                    <h2>{{ Name[21] }}</h2>
+                    <p>Type - {{ Type[21] }}</p>
+                    <p>Score : {{ Score[21] }}</p>
+                </div>
+            </div>
+            <div class="movie box-card slide-in" id="item23">
+                <img src="static\images\steins-gate.jpg">
+                <div class="layer">
+                    <h2>{{ Name[22] }}</h2>
+                    <p>Type - {{ Type[22] }}</p>
+                    <p>Score : {{ Score[22] }}</p>
+                </div>
+            </div>
+            <div class="movie box-card slide-in" id="item24">
+                <img src="static\images\conan.jpg">
+                <div class="layer">
+                    <h2>{{ Name[23] }}</h2>
+                    <p>Type - {{ Type[23] }}</p>
+                    <p>Score : {{ Score[23] }}</p>
+                </div>
+            </div>
+            <div class="movie box-card slide-in" id="item25">
+                <img src="static\images\souleater.jpg">
+                <div class="layer">
+                    <h2>{{ Name[24] }}</h2>
+                    <p>Type - {{ Type[24] }}</p>
+                    <p>Score : {{ Score[24] }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------------------recommendations----------------------------------- -->
+    <div id="recommendation">
+        <div class="fancy-head">
+            <div class="card-below">
+
+            </div>
+            <div class="card-middle">
+
+            </div>
+            <div class="card-above">
+
+            </div>
+            <div class="card-above-all">
+                <h1>RECOMMENDATION</h1>
+            </div>
+        </div>
+        <div class="row-1">
+            <div class="form">
+                <form action="/recommend-anime" method="post">
+                    <input name='user_input' type="text" class="form-control"
+                        placeholder="Search Your Favorite Anime"><br>
+                    <input type="submit" class="button" value="Recommend" />
+                </form>
+            </div>
+        </div>
+        <div class="container-recom">
+            <div class="recomTxt">
+                <div class="emojis-up">
+                    <img src="static/css/images/emoji1.png" class="emoji1" alt="">
+                    <img src="static/css/images/emoji3.png" class="emoji3" alt="">
+                    <img src="static/css/images/emoji2.png" class="emoji2" alt="">
+                    <img src="static/css/images/emoji4.png" class="emoji4" alt="">
+                </div>
+                <div class="recomTxtin">
+                    <h1>What's Your Mood Today</h1>
+                </div>
+                <div class="emojis-down">
+                    <img src="static/css/images/emoji5.png" class="emoji4" alt="">
+                    <img src="static/css/images/emoji7.png" class="emoji2" alt="">
+                    <img src="static/css/images/emoji6.png" class="emoji3" alt="">
+                    <img src="static/css/images/emoji8.png" class="emoji1" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="recommends">
+            <div class="class-box">
+                <div class="image-box">
+                    <img src="static\images\happy.png">
+                </div>
+                <div class="content">
+                    <div>
+                        <h2>Happy</h2>
+                        <a href="/comedy"><i class="fa-regular fa-face-smile-beam"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="class-box">
+                <div class="image-box">
+                    <img src="static\images\romance.jpg">
+                </div>
+                <div class="content">
+                    <div>
+                        <h2>Romantic</h2>
+                        <a href="/romance"><i class="fa-regular fa-face-kiss-wink-heart"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="class-box">
+                <div class="image-box">
+                    <img src="static\images\suprised.jpg">
+                </div>
+                <div class="content">
+                    <div>
+                        <h2>Surprised</h2>
+                        <a href="/surprised"><i class="fa-regular fa-face-surprise"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="class-box">
+                <div class="image-box">
+                    <img src="static\images\fearr.jpg">
+                </div>
+                <div class="content">
+                    <div>
+                        <h2>Fear</h2>
+                        <a href="/fear"><i class="fa-regular fa-face-dizzy"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="class-box">
+                <div class="image-box">
+                    <img src="static\images\sad.jpg">
+                </div>
+                <div class="content">
+                    <div>
+                        <h2>Sad</h2>
+                        <a href="/drama"><i class="fa-regular fa-face-tired"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="class-box">
+                <div class="image-box">
+                    <img src="static\images\angry.jpg">
+                </div>
+                <div class="content">
+                    <div>
+                        <h2>Angry</h2>
+                        <a href="/action"><i class="fa-regular fa-face-angry"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cat-card-holder">
+            <div class="left-card slide-in">
+                <img src="static/css/images/recomendpage.jpg" alt="">
+            </div>
+            <div class="right-card slide-in">
+                <div class="right-card-left">
+                    <img src="static/css/images/tanjirobg.jpg" alt="">
+                </div>
+                <div class="right-card-right">
+                    <h1>What's Your Favorite Genre</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem numquam quasi temporibus odit sit a
+                        quos in aut ipsum laudantium!</p>
+                </div>
+            </div>
+        </div>
+        <div class="recommends">
+            <div class="class-box">
+                <div class="image-box">
+                    <img src="static\images\action.jpg">
+                </div>
+                <div class="content">
+                    <div>
+                        <h2>Action/Adventure</h2>
+                        <a href="/action"><i class="fa-solid fa-person-rifle"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="class-box">
+                <div class="image-box">
+                    <img src="static\images\funny.jpg">
+                </div>
+                <div class="content">
+                    <div>
+                        <h2>Comedy/Slice-of-Life</h2>
+                        <a href="/comedy"><i class="fa-regular fa-face-grin-squint-tears"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="class-box">
+                <div class="image-box">
+                    <img src="static\images\drama.jpeg">
+                </div>
+                <div class="content">
+                    <div>
+                        <h2>Drama/Tragedy</h2>
+                        <a href="/drama"><i class="fa-regular fa-face-flushed"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="class-box">
+                <div class="image-box">
+                    <img src="static\images\sports.jpg">
+                </div>
+                <div class="content">
+                    <div>
+                        <h2>Sports</h2>
+                        <a href="/sports"><i class="fa-solid fa-futbol"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="class-box">
+                <div class="image-box">
+                    <img src="static\images\space.jpg">
+                </div>
+                <div class="content">
+                    <div>
+                        <h2>Sci-Fi/Space</h2>
+                        <a href="/scifi"><i class="fa-solid fa-shuttle-space"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="class-box">
+                <div class="image-box">
+                    <img src="static\images\mecha.jpg">
+                </div>
+                <div class="content">
+                    <div>
+                        <h2>Mecha/Military</h2>
+                        <a href="/mecha"><i class="fa-solid fa-jet-fighter-up"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="class-box">
+                <div class="image-box">
+                    <img src="static\images\magic.jpg">
+                </div>
+                <div class="content">
+                    <div>
+                        <h2>Supernatural/Magic</h2>
+                        <a href="/supernatural"><i class="fa-solid fa-hat-wizard"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="class-box">
+                <div class="image-box">
+                    <img src="static\images\romanctic.jpeg">
+                </div>
+                <div class="content">
+                    <div>
+                        <h2>Romance</h2>
+                        <a href="/romance"><i class="fa-regular fa-heart"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="class-box">
+                <div class="image-box">
+                    <img src="static\images\adventure.jpg">
+                </div>
+                <div class="content">
+                    <div>
+                        <h2>Adventure</h2>
+                        <a href="/adventure"><i class="fa-regular fa-face-grin-stars"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------------------------blog------------------------------------ -->
+    <div id="blog">
+        <div class="torn-effect-holder">
+            <div class="torn-txt">
+                <h1 class="slide-in">ANIME'S WORTH WATCHING</h1>
+                <p class="slide-in">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates id numquam
+                    cumque doloremque
+                    reiciendis labore consequuntur placeat ad, dolorum autem fugiat, temporibus asperiores sit. Porro
+                    hic sint cum debitis delectus vero, mollitia voluptate sequi iusto, magnam perferendis amet, sunt
+                    eligendi.</p>
+            </div>
+            <div class="torn-effect">
+                <div class="ins">
+                    <img src="static/css/images/ripped.jpg" class="torn-up">
+                </div>
+                <img src="static/css/images/anime-torn.jpg" class="torn-down">
+            </div>
+        </div>
+        <div class="blog-card-holder">
+            <div class="blog-struct">
+                <div class="blog-card">
+                    <div class="card-up">
+
+                    </div>
+                    <div class="card-down">
+                        <div class="down1">
+                            <h2>Gintama</h2>
+                            <p>action, adventure, comedy, drama</p>
+                        </div>
+                        <div class="down2">
+                            <div>
+                                <h2>Score</h2>
+                                <p>8.941</p>
+                            </div>
+                            <div>
+                                <h2>Seasons</h2>
+                                <p>9</p>
+                            </div>
+                            <div>
+                                <h2>Episodes</h2>
+                                <p>367</p>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta magnam similique, aliquam
+                            quod ab est?</p>
+                        <a href="https://myanimelist.net/anime/918/Gintama"><button>Know More</button></a>
+                    </div>
+                </div>
+                <img src="static/images/gintama.jpg" alt="">
+            </div>
+            <div class="blog-struct">
+                <div class="blog-card">
+                    <div class="card-up">
+
+                    </div>
+                    <div class="card-down">
+                        <div class="down1">
+                            <h2>Kaguya-sama: Love Is War</h2>
+                            <p>romance, comedy</p>
+                        </div>
+                        <div class="down2">
+                            <div>
+                                <h2>Score</h2>
+                                <p>8.5</p>
+                            </div>
+                            <div>
+                                <h2>Seasons</h2>
+                                <p>3</p>
+                            </div>
+                            <div>
+                                <h2>Episodes</h2>
+                                <p>37</p>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta magnam similique, aliquam
+                            quod ab est?</p>
+                        <a
+                            href="https://myanimelist.net/anime/37999/Kaguya-sama_wa_Kokurasetai__Tensai-tachi_no_Renai_Zunousen"><button>Know
+                                More</button></a>
+                    </div>
+                </div>
+                <img src="static/css/images/kaguyasama.jpg" alt="">
+            </div>
+            <div class="blog-struct">
+                <div class="blog-card">
+                    <div class="card-up">
+
+                    </div>
+                    <div class="card-down">
+                        <div class="down1">
+                            <h2>BlueLock</h2>
+                            <p>shounen, sports</p>
+                        </div>
+                        <div class="down2">
+                            <div>
+                                <h2>Score</h2>
+                                <p>8.4</p>
+                            </div>
+                            <div>
+                                <h2>Seasons</h2>
+                                <p>1</p>
+                            </div>
+                            <div>
+                                <h2>Episodes</h2>
+                                <p>24</p>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta magnam similique, aliquam
+                            quod ab est?</p>
+                        <a href="https://myanimelist.net/anime/49596/Blue_Lock"><button>Know More</button></a>
+                    </div>
+                </div>
+                <img src="static/css/images/bluelock.jpg" alt="">
+
+            </div>
+            <div class="blog-struct">
+                <div class="blog-card">
+                    <div class="card-up">
+
+                    </div>
+                    <div class="card-down">
+                        <div class="down1">
+                            <h2>ChainsawMan</h2>
+                            <p>action, horror, dark fantasy</p>
+                        </div>
+                        <div class="down2">
+                            <div>
+                                <h2>Score</h2>
+                                <p>8.6</p>
+                            </div>
+                            <div>
+                                <h2>Seasons</h2>
+                                <p>1</p>
+                            </div>
+                            <div>
+                                <h2>Episodes</h2>
+                                <p>12</p>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta magnam similique, aliquam
+                            quod ab est?</p>
+                        <a href="https://myanimelist.net/anime/44511/Chainsaw_Man"><button>Know More</button></a>
+                    </div>
+                </div>
+                <img src="static/css/images/csm.jpg" alt="">
+
+            </div>
+            <div class="blog-struct">
+                <div class="blog-card">
+                    <div class="card-up">
+
+                    </div>
+                    <div class="card-down">
+                        <div class="down1">
+                            <h2>Demon Slayer: Kimetsu no Yaiba</h2>
+                            <p>action, adventure, fantasy, thriller</p>
+                        </div>
+                        <div class="down2">
+                            <div>
+                                <h2>Score</h2>
+                                <p>8.7</p>
+                            </div>
+                            <div>
+                                <h2>Seasons</h2>
+                                <p>3</p>
+                            </div>
+                            <div>
+                                <h2>Episodes</h2>
+                                <p>44</p>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta magnam similique, aliquam
+                            quod ab est?</p>
+                        <a href="https://myanimelist.net/anime/38000/Kimetsu_no_Yaiba"><button>Know More</button></a>
+                    </div>
+                </div>
+                <img src="static/images/kny.jpg" class="imghover" alt="">
+            </div>
+        </div>
+        <div class="altLeft">
+            <div class="altUp">
+                <h1>ALCHEMY</h1>
+            </div>
+            <!-- <img src="static/css/images/tanjirotrans.png" alt=""> -->
+        </div>
+        <div class="blog-card-holder">
+            <div class="blog-struct">
+                <div class="blog-card">
+                    <div class="card-up">
+
+                    </div>
+                    <div class="card-down">
+                        <div class="down1">
+                            <h2>That Time I Got Reincarnated as a Slime</h2>
+                            <p>action, adventure, comedy, fantasy</p>
+                        </div>
+                        <div class="down2">
+                            <div>
+                                <h2>Score</h2>
+                                <p>8.1</p>
+                            </div>
+                            <div>
+                                <h2>Seasons</h2>
+                                <p>2</p>
+                            </div>
+                            <div>
+                                <h2>Episodes</h2>
+                                <p>48</p>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta magnam similique, aliquam
+                            quod ab est?</p>
+                        <a href="https://myanimelist.net/anime/37430/Tensei_shitara_Slime_Datta_Ken"><button>Know
+                                More</button></a>
+                    </div>
+                </div>
+                <img src="static/css/images/slime.jpg" alt="">
+            </div>
+            <div class="blog-struct">
+                <div class="blog-card">
+                    <div class="card-up">
+
+                    </div>
+                    <div class="card-down">
+                        <div class="down1">
+                            <h2>Tokyo Revengers</h2>
+                            <p>action, drama, supernatural</p>
+                        </div>
+                        <div class="down2">
+                            <div>
+                                <h2>Score</h2>
+                                <p>8.031</p>
+                            </div>
+                            <div>
+                                <h2>Seasons</h2>
+                                <p>2</p>
+                            </div>
+                            <div>
+                                <h2>Episodes</h2>
+                                <p>36</p>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta magnam similique, aliquam
+                            quod ab est?</p>
+                        <a href="https://myanimelist.net/anime/42249/Tokyo_Revengers"><button>Know More</button></a>
+                    </div>
+                </div>
+                <img src="static/css/images/tr.jpg" alt="">
+            </div>
+            <div class="blog-struct">
+                <div class="blog-card">
+                    <div class="card-up">
+
+                    </div>
+                    <div class="card-down">
+                        <div class="down1">
+                            <h2>Vinland Saga</h2>
+                            <p>action, adventure, drama</p>
+                        </div>
+                        <div class="down2">
+                            <div>
+                                <h2>Score</h2>
+                                <p>8.73</p>
+                            </div>
+                            <div>
+                                <h2>Seasons</h2>
+                                <p>2</p>
+                            </div>
+                            <div>
+                                <h2>Episodes</h2>
+                                <p>48</p>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta magnam similique, aliquam
+                            quod ab est?</p>
+                        <a href="https://myanimelist.net/anime/37521/Vinland_Saga"><button>Know More</button></a>
+                    </div>
+                </div>
+                <img src="static/css/images/vinland.jpg" alt="">
+            </div>
+            <div class="blog-struct">
+                <div class="blog-card">
+                    <div class="card-up">
+
+                    </div>
+                    <div class="card-down">
+                        <div class="down1">
+                            <h2>Jujutsu Kaisen</h2>
+                            <p>action, adventure, fantasy, thriller</p>
+                        </div>
+                        <div class="down2">
+                            <div>
+                                <h2>Score</h2>
+                                <p>8.651</p>
+                            </div>
+                            <div>
+                                <h2>Seasons</h2>
+                                <p>1</p>
+                            </div>
+                            <div>
+                                <h2>Episodes</h2>
+                                <p>24</p>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta magnam similique, aliquam
+                            quod ab est?</p>
+                        <a href="https://myanimelist.net/anime/40748/Jujutsu_Kaisen"><button>Know More</button></a>
+                    </div>
+                </div>
+                <img src="static/css/images/jjk.webp" alt="">
+
+            </div>
+            <div class="blog-struct">
+                <div class="blog-card">
+                    <div class="card-up">
+
+                    </div>
+                    <div class="card-down">
+                        <div class="down1">
+                            <h2>One Punch Man</h2>
+                            <p>superhero, fiction, comedy</p>
+                        </div>
+                        <div class="down2">
+                            <div>
+                                <h2>Score</h2>
+                                <p>8.5</p>
+                            </div>
+                            <div>
+                                <h2>Seasons</h2>
+                                <p>2</p>
+                            </div>
+                            <div>
+                                <h2>Episodes</h2>
+                                <p>24</p>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta magnam similique, aliquam
+                            quod ab est?</p>
+                        <a href="https://myanimelist.net/anime/30276/One_Punch_Man"><button>Know More</button></a>
+                    </div>
+                </div>
+                <img src="static/css/images/opm.jpg" class="imghover" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------------------------about-------------------------------------------- -->
+    <div id="about">
+        <div class="aboutOne">
+            <div class="myimg">
+                <img src="static/css/images/backTrans.png" alt="">
+                <img src="static/css/images/myimg-1.png" alt="">
+
+            </div>
+            <div class="rightOne">
+                <div class="rightSpace">
+
+                </div>
+                <div class="rightOnetxt slide-in">
+                    <div class="rightOnetxttxt">
+                        <h1>ABOUT !</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus est, veniam deleniti
+                            vel quod, ratione expedita impedit assumenda, qui neque quo aliquid asperiores? Amet harum
+                            iure molestiae culpa ex facilis.</p>
+                        <button class="portfolio">MY PORTFOLIO</button>
+                    </div>
+                </div>
+            </div>
+            <div class="mydetails">
+                <div class="detailsTxt">
+                    <div class="dteailstxttxt slide-in">
+                        <h2>Hi, I'm</h2>
+                        <h2>Shuaib Afnan</h2>
+                        <p>A Web Developer and Data Scientist..</p>
+                        <div class="socialmedia">
+                            <img src="static/css/images/icons8-instagram.svg" alt="">
+                            <img src="static/css/images/icons8-twitter-48.png" alt="">
+                            <img src="static/css/images/icons8-discord-48.png" alt="">
+                            <img src="static/css/images/linkedin.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="detailSpace">
+
+                </div>
+            </div>
+        </div>
+        <div class="altLeft">
+            <div class="altUp-other">
+                <h1>OTHER WORKS</h1>
+            </div>
+        </div>
+
+        <div class="aboutTwo">
+            <div class="twoLeft">
+                <div class="twoleftImg slide-in">
+                    <img src="static/css/images/aero.jpg" alt="">
+                </div>
+                <div class="twoleftTxt slide-in">
+                    <h2>Predictive System</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur consequatur porro id ea
+                        officia architecto nihil natus ipsum, aspernatur tempora?</p>
+                    <button class="viewnowbtn">View Now</button>
+                </div>
+            </div>
+            <div class="twoRight">
+                <div class="tworightSmall slide-in">
+                    <h1>PREDICTORS</h1>
+                    <h2>Flight Price Predictor</h2>
+                    <h2>Stock Price Predictor</h2>
+                    <h2>Weather Forecasting</h2>
+                </div>
+                <div class="tworightlarge slide-in">
+                    <h1>Predictigo</h1>
+                </div>
+                <div class="tworightImg slide-in">
+                    <div class="img1">
+                        <img src="static/css/images/stock.jpg" alt="">
+                    </div>
+                    <div class="circlerightnone">
+
+                    </div>
+                    <div class="img2">
+                        <img src="static/css/images/weather.jpg" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="aboutThree">
+            <div class="threeOne slide-in">
+                <img src="static/css/images/background-web2.jpg" alt="">
+                <div class="oneTrans">
+                    <img src="static/css/images/transEcom.png" alt="">
+                </div>
+            </div>
+            <div class="threeTwo">
+                <div class="twoUp slide-in">
+                    <img src="static/css/images/sunglasses-category.webp" alt="">
+                    <div class="twoUptrans">
+                        <img src="static/css/images/transEcom.png" alt="">
+                    </div>
+                </div>
+                <div class="twoDown slide-in">
+                    <img src="static/css/images/tshirt-category.jpg" alt="">
+                    <div class="twoDowntrans">
+                        <img src="static/css/images/transEcom.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="threeThree">
+                <div class="threeTxt slide-in">
+                    <h1>APPLE MART</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur quam in fugiat error! Eos
+                        assumenda nisi aliquam aut ut ipsum ipsam iusto! Vero inventore eos quo esse est consequuntur
+                        perspiciatis, aliquam omnis possimus magnam. Commodi.</p>
+                    <div class="btnTwohold-2">
+                        <div class="btnBack-2">
+
+                        </div>
+                        <div class="btnUp-2">
+                            <h2>VIEW NOW</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------------contact-------------------------------------- -->
+    <div class="altLeft-member">
+        <div class="altUp-member">
+            <h1>MEMBERSHIP</h1>
+        </div>
+    </div>
+    <div class="membership-holder">
+        <div class="memberCard">
+            <div class="Name">
+                <h2>WATER</h2>
+            </div>
+            <div class="memberDetails">
+                <div class="memberContent">
+                    <h2>$0<span>/month</span></h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ipsam nulla dicta, velit praesentium consequuntur repellendus? Non ipsum, ipsa eaque aliquam labore beatae veritatis aut?</p>
+                    <a href="">Subscribe</a>
+                </div>
+            </div>
+        </div>
+        <div class="memberCard">
+            <div class="Name">
+                <h2>MOON</h2>
+            </div>
+            <div class="memberDetails">
+                <div class="memberContent">
+                    <h2>$10<span>/month</span></h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ipsam nulla dicta, velit praesentium consequuntur repellendus? Non ipsum, ipsa eaque aliquam labore beatae veritatis aut?</p>
+                    <a href="">Subscribe</a>
+                </div>
+            </div>
+        </div>
+        <div class="memberCard">
+            <div class="Name">
+                <h2>SUN</h2>
+            </div>
+            <div class="memberDetails">
+                <div class="memberContent">
+                    <h2>$25<span>/month</span></h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ipsam nulla dicta, velit praesentium consequuntur repellendus? Non ipsum, ipsa eaque aliquam labore beatae veritatis aut?</p>
+                    <a href="">Subscribe</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container-contact">
+            <div class="left">
+                <div class="whereabouts">
+                    <span><i class="fa-solid fa-envelope"></i>
+                        <p>shuaibafnansk@gmail.com</p>
+                    </span>
+                    <span><i class="fa-solid fa-mobile"></i>
+                        <p>7075818209</p>
+                    </span>
+                    <span><i class="fa-solid fa-location-dot"></i>
+                        <p>Nellore, AndhraPradesh, India</p>
+                    </span>
+                </div>
+
+
+                <div class="final-img-div">
+                    <div class="onecircle">
+
+                    </div>
+                    <img src="static/css/images/tanjirotrans.png" alt="">
+                </div>
+                <h1>Rate My Page</h1>
+                <div class="rating-holder">
+                    <div class="rate">
+                        <img src="static/css/images/emoji4.png" alt="" class="image">
+
+                    </div>
+                    <div class="rate">
+                        <img src="static/css/images/fine.png" alt="" class="image">
+
+                    </div>
+                    <div class="rate">
+                        <img src="static/css/images/ok.png" alt="" class="image">
+
+                    </div>
+                    <div class="rate">
+                        <img src="static/css/images/bad.png" alt="" class="image">
+
+                    </div>
+                    <div class="rate">
+                        <img src="static/css/images/worst.png" alt="" class="image">
+
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="head-para">
+                    <h2>HELLO THERE !</h2>
+                    <p>Let us Know More About You</p>
+                </div>
+                <div class="form-holder">
+                    <input type="text" class="input" placeholder="   FirstName   ">
+                    <input type="text" class="input" placeholder="   LastName   ">
+                    <input type="text" class="input" placeholder="   Email   ">
+                    <input type="text" class="input" placeholder="   Phone   ">
+                    <input type="text" class="message" placeholder="   Message   ">
+                </div>
+                <input type="button" value="Submit" class="submit">
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="end">
+            <p>Made With <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="{{ url_for('static', filename='js/index.js') }}"></script>
+
+</body>
+
+</html>
